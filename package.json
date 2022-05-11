@@ -1,0 +1,18 @@
+{
+  "name": "esbuild-helpers",
+  "version": "0.0.8",
+  "description": "Simple helper lib to help make js bundles for web, nodejs server and electron",
+  "scripts": {
+    "build": "esbuild ./src/index.ts --bundle --minify --format=esm --outfile=cytoscapeWithDagre.js"
+  },
+  "keywords": [],
+  "author": "Vegar Ringdal",
+  "license": "MIT",
+  "main": "dist/exported.js",
+  "devDependencies": {
+    "cytoscape": "^3.21.1",
+    "cytoscape-dagre": "^2.4.0",
+    "typescript": "^4.3.5",
+    "esbuild": "^0.14.38"
+  }
+}
